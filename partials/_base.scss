@@ -1,0 +1,104 @@
+@use "utils" as *;
+
+body {
+  font-family: var(--ff-main), sans-serif;
+  font-size: var(--fs-default);
+  font-weight: vaR(--fw-normal);
+  line-height: 1.5;
+
+  background-color: var(--clr-grey-1);
+  color: var(--clr-grey-2);
+}
+
+main {
+  min-height: 100vh;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: var(--desktop-container-width);
+  background-color: var(--clr-white);
+  overflow: hidden;
+  border-radius: var(--sp-4);
+
+  box-shadow: 0 1rem 1rem rgb(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-body {
+  padding: var(--sp-7);
+}
+
+.card-subheading {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: var(--fs-2);
+  letter-spacing: 5px;
+
+  margin-block-end: var(--sp-5);
+}
+
+.card-title {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  color: var(--clr-grey-3);
+
+  margin-bottom: var(--sp-6);
+}
+
+.card-text {
+  margin-bottom: var(--sp-5);
+}
+
+.card-pricing {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+
+  margin-bottom: var(--sp-5);
+}
+
+.price-current {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary);
+  font-size: var(--fs-9);
+}
+
+.card-btn {
+  width: 100%;
+  cursor: pointer;
+
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+
+  border: none;
+  border-radius: var(--sp-3);
+  padding: var(--sp-4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+
+  transition: all 0.3s;
+}
+
+.card-btn:hover {
+  background-color: var(--clr-primary-shade);
+}
+
+.btn-icon {
+  width: 18px;
+  height: 18px;
+  padding-bottom: var(--sp-2);
+}

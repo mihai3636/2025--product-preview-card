@@ -1,0 +1,21 @@
+@use "./utils" as *;
+
+@media (max-width: toRem(600px)) {
+  main {
+    padding: 1rem;
+  }
+
+  .card-body {
+    padding: var(--sp-5);
+  }
+}
+
+@media (max-width: toRem(476px)) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-body {
+    padding: var(--sp-7);
+  }
+}
